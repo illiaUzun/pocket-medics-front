@@ -29,6 +29,8 @@ public class MedProfileActivity extends AppCompatActivity {
     private TextView surname;
     private TextView category;
     private TextView about;
+    private TextView phone;
+    private TextView adress;
     private ImageView favoriteButton;
     private ImageView backButton;
 
@@ -43,6 +45,8 @@ public class MedProfileActivity extends AppCompatActivity {
         name = findViewById(R.id.medProfileName);
         category = findViewById(R.id.medProfileCategory);
         about = findViewById(R.id.medProfileAbout);
+        phone = findViewById(R.id.profPhone);
+        adress = findViewById(R.id.profAndress);
         favoriteButton = findViewById(R.id.medProfileFavoriteButton);
         backButton = findViewById(R.id.medProfileBackButton);
 
@@ -74,6 +78,8 @@ public class MedProfileActivity extends AppCompatActivity {
                             name.append(" " + medic.getSurname());
                             about.setText(medic.getInfo());
                             category.setText(medic.getCategory());
+                            phone.setText(medic.getTelephone());
+                            adress.setText(medic.getAdress());
                         }
                     }
 
